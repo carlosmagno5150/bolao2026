@@ -1,0 +1,50 @@
+  Determining projects to restore...
+C:\projetos\projeto\src\Bolao\BolaoApi.Tests\BolaoApi.Tests.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-37gx-xxp4-5rgx [C:\projetos\projeto\src\Bolao\Bolao.sln]
+C:\projetos\projeto\src\Bolao\BolaoApi.Tests\BolaoApi.Tests.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3x6-4m5h-cxqf [C:\projetos\projeto\src\Bolao\Bolao.sln]
+  All projects are up-to-date for restore.
+C:\projetos\projeto\src\Bolao\BolaoApi.Tests\BolaoApi.Tests.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-37gx-xxp4-5rgx
+C:\projetos\projeto\src\Bolao\BolaoApi.Tests\BolaoApi.Tests.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3x6-4m5h-cxqf
+  BolaoApi -> C:\projetos\projeto\src\Bolao\BolaoApi\bin\Debug\net10.0\BolaoApi.dll
+  BolaoApi.Tests -> C:\projetos\projeto\src\Bolao\BolaoApi.Tests\bin\Debug\net10.0\BolaoApi.Tests.dll
+Test run for C:\projetos\projeto\src\Bolao\BolaoApi.Tests\bin\Debug\net10.0\BolaoApi.Tests.dll (.NETCoreApp,Version=v10.0)
+VSTest version 18.0.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:00.98]     BolaoApi.Tests.Integration.AuthEndpointTests.AuthenticateEndpoint_TokenShouldBeValid [FAIL]
+[xUnit.net 00:00:01.25]     BolaoApi.Tests.Integration.AuthEndpointTests.RegisterEndpoint_WithDuplicateEmail_ShouldReturnBadRequest [FAIL]
+[xUnit.net 00:00:01.39]     BolaoApi.Tests.Integration.AuthEndpointTests.AuthenticateEndpoint_WithValidCredentials_ShouldReturnToken [FAIL]
+  Failed BolaoApi.Tests.Integration.AuthEndpointTests.AuthenticateEndpoint_TokenShouldBeValid [538 ms]
+  Error Message:
+   System.Text.Json.JsonException : The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+---- System.Text.Json.JsonReaderException : The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. LineNumber: 0 | BytePositionInLine: 0.
+  Stack Trace:
+     at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize[TReadBufferState,TStream](TReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync[TReadBufferState,TStream](TStream utf8Json, TReadBufferState bufferState, CancellationToken cancellationToken)
+   at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at BolaoApi.Tests.Integration.AuthEndpointTests.AuthenticateEndpoint_TokenShouldBeValid() in C:\projetos\projeto\src\Bolao\BolaoApi.Tests\Integration\AuthEndpointTests.cs:line 169
+--- End of stack trace from previous location ---
+----- Inner Stack Trace -----
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+  Failed BolaoApi.Tests.Integration.AuthEndpointTests.RegisterEndpoint_WithDuplicateEmail_ShouldReturnBadRequest [249 ms]
+  Error Message:
+   Assert.False() Failure
+Expected: False
+Actual:   True
+  Stack Trace:
+     at BolaoApi.Tests.Integration.AuthEndpointTests.RegisterEndpoint_WithDuplicateEmail_ShouldReturnBadRequest() in C:\projetos\projeto\src\Bolao\BolaoApi.Tests\Integration\AuthEndpointTests.cs:line 78
+--- End of stack trace from previous location ---
+  Failed BolaoApi.Tests.Integration.AuthEndpointTests.AuthenticateEndpoint_WithValidCredentials_ShouldReturnToken [125 ms]
+  Error Message:
+   Assert.True() Failure
+Expected: True
+Actual:   False
+  Stack Trace:
+     at BolaoApi.Tests.Integration.AuthEndpointTests.AuthenticateEndpoint_WithValidCredentials_ShouldReturnToken() in C:\projetos\projeto\src\Bolao\BolaoApi.Tests\Integration\AuthEndpointTests.cs:line 103
+--- End of stack trace from previous location ---
+
+Failed!  - Failed:     3, Passed:    18, Skipped:     0, Total:    21, Duration: 1 s - BolaoApi.Tests.dll (net10.0)

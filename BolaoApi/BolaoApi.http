@@ -1,0 +1,26 @@
+@BolaoApi_HostAddress = http://localhost:5010
+
+### Register new user
+POST {{BolaoApi_HostAddress}}/auth/register
+Content-Type: application/json
+
+{
+  "name": "João Silva",
+  "email": "joao@example.com",
+  "password": "senha123"
+}
+
+### Authenticate user
+POST {{BolaoApi_HostAddress}}/auth/authenticate
+Content-Type: application/json
+
+{
+  "email": "joao@example.com",
+  "password": "senha123"
+}
+
+### Weather forecast
+GET {{BolaoApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
