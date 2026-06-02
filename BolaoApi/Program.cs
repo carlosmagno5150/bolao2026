@@ -2,6 +2,15 @@ using BolaoApi.Application.Dtos;
 using BolaoApi.Domain.Interfaces;
 using BolaoApi.Infrastructure.Data;
 using BolaoApi.Infrastructure.Repositories;
+using BolaoApi.Features.Teams.Infrastructure.Interfaces;
+using BolaoApi.Features.Teams.Infrastructure.Repositories;
+using BolaoApi.Features.Championships.Infrastructure.Interfaces;
+using BolaoApi.Features.Championships.Infrastructure.Repositories;
+using BolaoApi.Features.Matches.Infrastructure.Interfaces;
+using BolaoApi.Features.Matches.Infrastructure.Repositories;
+using BolaoApi.Features.Teams.Application.Endpoints;
+using BolaoApi.Features.Championships.Application.Endpoints;
+using BolaoApi.Features.Matches.Application.Endpoints;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -33,6 +42,9 @@ else
 }
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<ITeamRepository, TeamRepository>();
+builder.Services.AddScoped<IChampionshipRepository, ChampionshipRepository>();
+builder.Services.AddScoped<IMatchRepository, MatchRepository>();
 
 var app = builder.Build();
 
@@ -51,6 +63,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.MapCreateTeam();
+app.MapCreateChampionship();
+app.MapCreateMatch();
 
 app.MapPost("/auth/register", async (RegisterRequestDto request, IUserRepository userRepository) =>
     {
