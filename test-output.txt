@@ -4,47 +4,824 @@ C:\projetos\projeto\src\Bolao\BolaoApi.Tests\BolaoApi.Tests.csproj : warning NU1
   All projects are up-to-date for restore.
 C:\projetos\projeto\src\Bolao\BolaoApi.Tests\BolaoApi.Tests.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-37gx-xxp4-5rgx
 C:\projetos\projeto\src\Bolao\BolaoApi.Tests\BolaoApi.Tests.csproj : warning NU1903: Package 'System.Security.Cryptography.Xml' 9.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3x6-4m5h-cxqf
-  BolaoApi -> C:\projetos\projeto\src\Bolao\BolaoApi\bin\Debug\net10.0\BolaoApi.dll
-  BolaoApi.Tests -> C:\projetos\projeto\src\Bolao\BolaoApi.Tests\bin\Debug\net10.0\BolaoApi.Tests.dll
-Test run for C:\projetos\projeto\src\Bolao\BolaoApi.Tests\bin\Debug\net10.0\BolaoApi.Tests.dll (.NETCoreApp,Version=v10.0)
+C:\projetos\projeto\src\Bolao\BolaoApi\Features\Teams\Application\Endpoints\CreateTeamEndpoint.cs(12,9): warning ASPDEPR002: 'OpenApiEndpointConventionBuilderExtensions.WithOpenApi<TBuilder>(TBuilder)' is obsolete: 'WithOpenApi is deprecated and will be removed in a future release. For more information, visit https://aka.ms/aspnet/deprecate/002.' (https://aka.ms/aspnet/deprecate/002) [C:\projetos\projeto\src\Bolao\BolaoApi\BolaoApi.csproj]
+C:\projetos\projeto\src\Bolao\BolaoApi\Features\Championships\Application\Endpoints\CreateChampionshipEndpoint.cs(12,9): warning ASPDEPR002: 'OpenApiEndpointConventionBuilderExtensions.WithOpenApi<TBuilder>(TBuilder)' is obsolete: 'WithOpenApi is deprecated and will be removed in a future release. For more information, visit https://aka.ms/aspnet/deprecate/002.' (https://aka.ms/aspnet/deprecate/002) [C:\projetos\projeto\src\Bolao\BolaoApi\BolaoApi.csproj]
+C:\projetos\projeto\src\Bolao\BolaoApi\Features\Matches\Application\Endpoints\CreateMatchEndpoint.cs(12,9): warning ASPDEPR002: 'OpenApiEndpointConventionBuilderExtensions.WithOpenApi<TBuilder>(TBuilder)' is obsolete: 'WithOpenApi is deprecated and will be removed in a future release. For more information, visit https://aka.ms/aspnet/deprecate/002.' (https://aka.ms/aspnet/deprecate/002) [C:\projetos\projeto\src\Bolao\BolaoApi\BolaoApi.csproj]
+C:\projetos\projeto\src\Bolao\BolaoApi\Program.cs(71,1): warning ASPDEPR002: 'OpenApiEndpointConventionBuilderExtensions.WithOpenApi<TBuilder>(TBuilder)' is obsolete: 'WithOpenApi is deprecated and will be removed in a future release. For more information, visit https://aka.ms/aspnet/deprecate/002.' (https://aka.ms/aspnet/deprecate/002) [C:\projetos\projeto\src\Bolao\BolaoApi\BolaoApi.csproj]
+C:\projetos\projeto\src\Bolao\BolaoApi\Program.cs(90,1): warning ASPDEPR002: 'OpenApiEndpointConventionBuilderExtensions.WithOpenApi<TBuilder>(TBuilder)' is obsolete: 'WithOpenApi is deprecated and will be removed in a future release. For more information, visit https://aka.ms/aspnet/deprecate/002.' (https://aka.ms/aspnet/deprecate/002) [C:\projetos\projeto\src\Bolao\BolaoApi\BolaoApi.csproj]
+  BolaoApi -> C:\projetos\projeto\src\Bolao\BolaoApi\bin\Release\net10.0\BolaoApi.dll
+C:\projetos\projeto\src\Bolao\BolaoApi.Tests\Integration\CreateTeamEndpointTests.cs(161,9): warning xUnit2009: Do not use Assert.True() to check for substrings. Use Assert.StartsWith instead. (https://xunit.net/xunit.analyzers/rules/xUnit2009) [C:\projetos\projeto\src\Bolao\BolaoApi.Tests\BolaoApi.Tests.csproj]
+C:\projetos\projeto\src\Bolao\BolaoApi.Tests\Integration\CreateChampionshipEndpointTests.cs(180,9): warning xUnit2009: Do not use Assert.True() to check for substrings. Use Assert.StartsWith instead. (https://xunit.net/xunit.analyzers/rules/xUnit2009) [C:\projetos\projeto\src\Bolao\BolaoApi.Tests\BolaoApi.Tests.csproj]
+C:\projetos\projeto\src\Bolao\BolaoApi.Tests\Integration\CreateMatchEndpointTests.cs(285,9): warning xUnit2009: Do not use Assert.True() to check for substrings. Use Assert.StartsWith instead. (https://xunit.net/xunit.analyzers/rules/xUnit2009) [C:\projetos\projeto\src\Bolao\BolaoApi.Tests\BolaoApi.Tests.csproj]
+  BolaoApi.Tests -> C:\projetos\projeto\src\Bolao\BolaoApi.Tests\bin\Release\net10.0\BolaoApi.Tests.dll
+Test run for C:\projetos\projeto\src\Bolao\BolaoApi.Tests\bin\Release\net10.0\BolaoApi.Tests.dll (.NETCoreApp,Version=v10.0)
 VSTest version 18.0.1 (x64)
 
 Starting test execution, please wait...
 A total of 1 test files matched the specified pattern.
-[xUnit.net 00:00:00.98]     BolaoApi.Tests.Integration.AuthEndpointTests.AuthenticateEndpoint_TokenShouldBeValid [FAIL]
-[xUnit.net 00:00:01.25]     BolaoApi.Tests.Integration.AuthEndpointTests.RegisterEndpoint_WithDuplicateEmail_ShouldReturnBadRequest [FAIL]
-[xUnit.net 00:00:01.39]     BolaoApi.Tests.Integration.AuthEndpointTests.AuthenticateEndpoint_WithValidCredentials_ShouldReturnToken [FAIL]
-  Failed BolaoApi.Tests.Integration.AuthEndpointTests.AuthenticateEndpoint_TokenShouldBeValid [538 ms]
-  Error Message:
-   System.Text.Json.JsonException : The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
----- System.Text.Json.JsonReaderException : The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. LineNumber: 0 | BytePositionInLine: 0.
-  Stack Trace:
-     at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
-   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
-   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize[TReadBufferState,TStream](TReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
-   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync[TReadBufferState,TStream](TStream utf8Json, TReadBufferState bufferState, CancellationToken cancellationToken)
-   at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)
-   at BolaoApi.Tests.Integration.AuthEndpointTests.AuthenticateEndpoint_TokenShouldBeValid() in C:\projetos\projeto\src\Bolao\BolaoApi.Tests\Integration\AuthEndpointTests.cs:line 169
---- End of stack trace from previous location ---
------ Inner Stack Trace -----
-   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
-   at System.Text.Json.Utf8JsonReader.Read()
-   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
-  Failed BolaoApi.Tests.Integration.AuthEndpointTests.RegisterEndpoint_WithDuplicateEmail_ShouldReturnBadRequest [249 ms]
-  Error Message:
-   Assert.False() Failure
-Expected: False
-Actual:   True
-  Stack Trace:
-     at BolaoApi.Tests.Integration.AuthEndpointTests.RegisterEndpoint_WithDuplicateEmail_ShouldReturnBadRequest() in C:\projetos\projeto\src\Bolao\BolaoApi.Tests\Integration\AuthEndpointTests.cs:line 78
---- End of stack trace from previous location ---
-  Failed BolaoApi.Tests.Integration.AuthEndpointTests.AuthenticateEndpoint_WithValidCredentials_ShouldReturnToken [125 ms]
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.4+50e68bbb8b (64-bit .NET 10.0.2)
+[xUnit.net 00:00:00.56]   Discovering: BolaoApi.Tests
+[xUnit.net 00:00:00.60]   Discovered:  BolaoApi.Tests
+[xUnit.net 00:00:00.62]   Starting:    BolaoApi.Tests
+  Passed BolaoApi.Tests.Features.Matches.MatchEntityTests.Match_ScoresCanBeNull [188 ms]
+  Passed BolaoApi.Tests.Features.Matches.MatchEntityTests.Match_ScoresCanBeHighValues [1 ms]
+  Passed BolaoApi.Tests.Features.Teams.TeamEntityTests.TeamProperties_ShouldBeSettable [192 ms]
+  Passed BolaoApi.Tests.Features.Championships.ChampionshipEntityTests.ChampionshipProperties_ShouldBeSettable [192 ms]
+  Passed BolaoApi.Tests.Features.Matches.MatchEntityTests.Match_ScoresCanBeZero [< 1 ms]
+  Passed BolaoApi.Tests.Features.Teams.TeamEntityTests.TeamConstructor_ShouldHaveDefaultValues [< 1 ms]
+  Passed BolaoApi.Tests.Features.Championships.ChampionshipEntityTests.Championship_NameCanBeAnyLength [< 1 ms]
+  Passed BolaoApi.Tests.Features.Matches.MatchEntityTests.Match_OneScoreCanBeNullWhileOtherIsSet [< 1 ms]
+  Passed BolaoApi.Tests.Features.Teams.TeamEntityTests.Team_NameCanBeAnyLength [< 1 ms]
+  Passed BolaoApi.Tests.Features.Championships.ChampionshipEntityTests.Championship_StartAndEndDatesCanBeAnyValidDates [< 1 ms]
+  Passed BolaoApi.Tests.Features.Teams.TeamEntityTests.Team_CreatedAtCanBeSetToAnyDate [< 1 ms]
+  Passed BolaoApi.Tests.Features.Championships.ChampionshipEntityTests.Championship_ShouldAllowSameStartAndEndDate [< 1 ms]
+  Passed BolaoApi.Tests.Features.Teams.TeamEntityTests.Team_UrlFlagCanBeAnyValidUrl [< 1 ms]
+  Passed BolaoApi.Tests.Features.Championships.ChampionshipEntityTests.ChampionshipConstructor_ShouldHaveDefaultValues [< 1 ms]
+  Passed BolaoApi.Tests.Features.Championships.ChampionshipEntityTests.Championship_CreatedAtCanBeSetToAnyDate [< 1 ms]
+  Passed BolaoApi.Tests.Features.Matches.MatchEntityTests.MatchProperties_ShouldBeSettable [< 1 ms]
+  Passed BolaoApi.Tests.Features.Matches.MatchEntityTests.Match_CanHaveSameHomeAndVisitorTeamIds [< 1 ms]
+  Passed BolaoApi.Tests.Features.Matches.MatchEntityTests.MatchConstructor_ShouldHaveDefaultValues [< 1 ms]
+  Passed BolaoApi.Tests.Features.Matches.MatchEntityTests.Match_DateCanBeAnyValidDateTime [< 1 ms]
+  Passed BolaoApi.Tests.Validators.CreateChampionshipValidatorTests.ValidateAsync_WithEndDateAfterStartDate_ShouldReturnValid [225 ms]
+  Passed BolaoApi.Tests.Validators.CreateChampionshipValidatorTests.ValidateAsync_WithNameExactly3Chars_ShouldReturnValid [< 1 ms]
+  Passed BolaoApi.Tests.Validators.CreateMatchValidatorTests.ValidateAsync_WithHighScores_ShouldReturnValid [231 ms]
+  Passed BolaoApi.Tests.Validators.CreateTeamValidatorTests.ValidateAsync_WithNameTooLong_ShouldReturnInvalid [233 ms]
+  Passed BolaoApi.Tests.Validators.CreateChampionshipValidatorTests.ValidateAsync_WithNameTooShort_ShouldReturnInvalid [7 ms]
+  Passed BolaoApi.Tests.Validators.CreateMatchValidatorTests.ValidateAsync_WithAllInvalidFields_ShouldReturnMultipleErrors [3 ms]
+  Passed BolaoApi.Tests.Validators.CreateChampionshipValidatorTests.ValidateAsync_WithMinDateAsEndDate_ShouldReturnInvalid [1 ms]
+  Passed BolaoApi.Tests.Validators.CreateTeamValidatorTests.ValidateAsync_WithNameExactly255Chars_ShouldReturnValid [1 ms]
+  Passed BolaoApi.Tests.Validators.CreateMatchValidatorTests.ValidateAsync_WithOnlyVisitorScore_ShouldReturnValid [< 1 ms]
+  Passed BolaoApi.Tests.Validators.CreateChampionshipValidatorTests.ValidateAsync_WithAllInvalidFields_ShouldReturnMultipleErrors [< 1 ms]
+  Passed BolaoApi.Tests.Validators.CreateTeamValidatorTests.ValidateAsync_WithInvalidUrl_ShouldReturnInvalid [1 ms]
+  Passed BolaoApi.Tests.Validators.CreateMatchValidatorTests.ValidateAsync_WithMinDateAsDate_ShouldReturnInvalid [1 ms]
+  Passed BolaoApi.Tests.Validators.CreateChampionshipValidatorTests.ValidateAsync_WithNameTooLong_ShouldReturnInvalid [1 ms]
+  Passed BolaoApi.Tests.Validators.CreateTeamValidatorTests.ValidateAsync_WithFtpUrl_ShouldReturnInvalid [< 1 ms]
+  Passed BolaoApi.Tests.Validators.CreateTeamValidatorTests.ValidateAsync_WithHttpUrl_ShouldReturnValid [< 1 ms]
+  Passed BolaoApi.Tests.Validators.CreateTeamValidatorTests.ValidateAsync_WithAllInvalidFields_ShouldReturnMultipleErrors [1 ms]
+  Passed BolaoApi.Tests.Validators.CreateChampionshipValidatorTests.ValidateAsync_WithValidData_ShouldReturnValid [2 ms]
+  Passed BolaoApi.Tests.Validators.CreateMatchValidatorTests.ValidateAsync_WithNegativeHomeScore_ShouldReturnInvalid [3 ms]
+  Passed BolaoApi.Tests.Validators.CreateTeamValidatorTests.ValidateAsync_WithEmptyName_ShouldReturnInvalid [1 ms]
+  Passed BolaoApi.Tests.Validators.CreateChampionshipValidatorTests.ValidateAsync_WithNameExactly255Chars_ShouldReturnValid [< 1 ms]
+  Passed BolaoApi.Tests.Validators.CreateMatchValidatorTests.ValidateAsync_WithOnlyHomeScore_ShouldReturnValid [< 1 ms]
+  Passed BolaoApi.Tests.Validators.CreateTeamValidatorTests.ValidateAsync_WithHttpsUrl_ShouldReturnValid [< 1 ms]
+  Passed BolaoApi.Tests.Validators.CreateChampionshipValidatorTests.ValidateAsync_WithEndDateBeforeStartDate_ShouldReturnInvalid [1 ms]
+  Passed BolaoApi.Tests.Validators.CreateMatchValidatorTests.ValidateAsync_WithSameHomeAndVisitorTeamIds_ShouldReturnInvalid [< 1 ms]
+  Passed BolaoApi.Tests.Validators.CreateTeamValidatorTests.ValidateAsync_WithEmptyUrlFlag_ShouldReturnInvalid [1 ms]
+  Passed BolaoApi.Tests.Validators.CreateMatchValidatorTests.ValidateAsync_WithValidData_ShouldReturnValid [1 ms]
+  Passed BolaoApi.Tests.Validators.CreateTeamValidatorTests.ValidateAsync_WithValidData_ShouldReturnValid [1 ms]
+  Passed BolaoApi.Tests.Validators.CreateTeamValidatorTests.ValidateAsync_WithNameExactly3Chars_ShouldReturnValid [< 1 ms]
+  Passed BolaoApi.Tests.Validators.CreateMatchValidatorTests.ValidateAsync_WithEmptyChampionshipId_ShouldReturnInvalid [1 ms]
+[xUnit.net 00:00:00.91]     BolaoApi.Tests.Validators.CreateChampionshipValidatorTests.ValidateAsync_WithSameStartAndEndDate_ShouldReturnValid [FAIL]
+[xUnit.net 00:00:00.92]       Assert.True() Failure
+[xUnit.net 00:00:00.92]       Expected: True
+[xUnit.net 00:00:00.92]       Actual:   False
+[xUnit.net 00:00:00.92]       Stack Trace:
+[xUnit.net 00:00:00.92]         C:\projetos\projeto\src\Bolao\BolaoApi.Tests\Validators\CreateChampionshipValidatorTests.cs(139,0): at BolaoApi.Tests.Validators.CreateChampionshipValidatorTests.ValidateAsync_WithSameStartAndEndDate_ShouldReturnValid()
+[xUnit.net 00:00:00.92]         --- End of stack trace from previous location ---
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+  Passed BolaoApi.Tests.Validators.CreateTeamValidatorTests.ValidateAsync_WithNameTooShort_ShouldReturnInvalid [1 ms]
+  Passed BolaoApi.Tests.Validators.CreateMatchValidatorTests.ValidateAsync_WithEmptyVisitorTeamId_ShouldReturnInvalid [< 1 ms]
+  Passed BolaoApi.Tests.Validators.CreateMatchValidatorTests.ValidateAsync_WithEmptyHomeTeamId_ShouldReturnInvalid [1 ms]
+  Passed BolaoApi.Tests.Validators.CreateMatchValidatorTests.ValidateAsync_WithValidDataAndScores_ShouldReturnValid [< 1 ms]
+  Passed BolaoApi.Tests.Validators.CreateMatchValidatorTests.ValidateAsync_WithZeroScores_ShouldReturnValid [< 1 ms]
+  Passed BolaoApi.Tests.Validators.CreateMatchValidatorTests.ValidateAsync_WithNegativeVisitorScore_ShouldReturnInvalid [< 1 ms]
+  Failed BolaoApi.Tests.Validators.CreateChampionshipValidatorTests.ValidateAsync_WithSameStartAndEndDate_ShouldReturnValid [1 ms]
   Error Message:
    Assert.True() Failure
 Expected: True
 Actual:   False
   Stack Trace:
-     at BolaoApi.Tests.Integration.AuthEndpointTests.AuthenticateEndpoint_WithValidCredentials_ShouldReturnToken() in C:\projetos\projeto\src\Bolao\BolaoApi.Tests\Integration\AuthEndpointTests.cs:line 103
+     at BolaoApi.Tests.Validators.CreateChampionshipValidatorTests.ValidateAsync_WithSameStartAndEndDate_ShouldReturnValid() in C:\projetos\projeto\src\Bolao\BolaoApi.Tests\Validators\CreateChampionshipValidatorTests.cs:line 139
 --- End of stack trace from previous location ---
+  Passed BolaoApi.Tests.Validators.CreateChampionshipValidatorTests.ValidateAsync_WithEmptyName_ShouldReturnInvalid [< 1 ms]
+  Passed BolaoApi.Tests.Validators.CreateChampionshipValidatorTests.ValidateAsync_WithMinDateAsStartDate_ShouldReturnInvalid [< 1 ms]
+  Passed BolaoApi.Tests.UserEntityTests.UserConstructor_ShouldSetCreatedAtToUtcNow [493 ms]
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Program[0]
+      Championship creation validation failed: End date must be after start date
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Program[0]
+      Team created successfully: 3ed4d885-8a32-4215-a80f-81e1c9dba8e0
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Program[0]
+      Match created successfully: 5cf98115-6c09-45d6-9a70-01b27429de13
+[xUnit.net 00:00:01.32]     BolaoApi.Tests.Integration.CreateChampionshipEndpointTests.CreateChampionshipEndpoint_WithSameDateAsBothDates_ShouldReturnCreated [FAIL]
+[xUnit.net 00:00:01.32]       Assert.True() Failure
+[xUnit.net 00:00:01.32]       Expected: True
+[xUnit.net 00:00:01.32]       Actual:   False
+[xUnit.net 00:00:01.32]       Stack Trace:
+[xUnit.net 00:00:01.32]         C:\projetos\projeto\src\Bolao\BolaoApi.Tests\Integration\CreateChampionshipEndpointTests.cs(139,0): at BolaoApi.Tests.Integration.CreateChampionshipEndpointTests.CreateChampionshipEndpoint_WithSameDateAsBothDates_ShouldReturnCreated()
+[xUnit.net 00:00:01.32]         --- End of stack trace from previous location ---
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+  Passed BolaoApi.Tests.UserEntityTests.UserDefaultConstructor_ShouldInitializeWithDefaults [< 1 ms]
+  Passed BolaoApi.Tests.Features.Matches.MatchRepositoryTests.CreateAsync_MultipleMatches_ShouldHaveUniqueIds [606 ms]
+  Passed BolaoApi.Tests.Integration.WeatherForecastEndpointTests.GetWeatherForecast_ShouldReturnArrayOfForecasts [142 ms]
+  Passed BolaoApi.Tests.Integration.CreateTeamEndpointTests.CreateTeamEndpoint_WithValidHttpUrl_ShouldReturnCreated [147 ms]
+  Failed BolaoApi.Tests.Integration.CreateChampionshipEndpointTests.CreateChampionshipEndpoint_WithSameDateAsBothDates_ShouldReturnCreated [142 ms]
+  Error Message:
+   Assert.True() Failure
+Expected: True
+Actual:   False
+  Stack Trace:
+     at BolaoApi.Tests.Integration.CreateChampionshipEndpointTests.CreateChampionshipEndpoint_WithSameDateAsBothDates_ShouldReturnCreated() in C:\projetos\projeto\src\Bolao\BolaoApi.Tests\Integration\CreateChampionshipEndpointTests.cs:line 139
+--- End of stack trace from previous location ---
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Program[0]
+      Championship creation validation failed: Championship name is required, Championship name must have at least 3 characters
+warn: Program[0]
+      Team creation validation failed: Team name is required, Team name must have at least 3 characters
+warn: Program[0]
+      Match creation validation failed: Home team and visitor team must be different
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Program[0]
+      Team creation validation failed: Team name must not exceed 255 characters
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Program[0]
+      Match created successfully: 9bc42b5c-abb1-4f5a-9fd9-8d518dba167c
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+warn: Program[0]
+      Championship creation validation failed: End date must be after start date
+  Passed BolaoApi.Tests.Integration.CreateMatchEndpointTests.CreateMatchEndpoint_WithOnlyVisitorScore_ShouldReturnCreated [152 ms]
+  Passed BolaoApi.Tests.Integration.WeatherForecastEndpointTests.GetWeatherForecast_ShouldReturnOkStatus [23 ms]
+  Passed BolaoApi.Tests.Integration.CreateChampionshipEndpointTests.CreateChampionshipEndpoint_WithEmptyName_ShouldReturnBadRequest [24 ms]
+  Passed BolaoApi.Tests.Integration.CreateTeamEndpointTests.CreateTeamEndpoint_WithEmptyName_ShouldReturnBadRequest [25 ms]
+  Passed BolaoApi.Tests.Integration.CreateMatchEndpointTests.CreateMatchEndpoint_WithSameTeamIds_ShouldReturnBadRequest [26 ms]
+  Passed BolaoApi.Tests.Integration.CreateTeamEndpointTests.CreateTeamEndpoint_WithExceededNameLength_ShouldReturnBadRequest [14 ms]
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Program[0]
+      Team creation validation failed: Team flag URL is required, Team flag URL must be a valid URL
+warn: Program[0]
+      Match creation validation failed: Visitor team score must be greater than or equal to 0
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Program[0]
+      Championship created successfully: 2468c130-f880-4714-b37d-0d6dbde2b7e8
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Program[0]
+      Championship creation validation failed: Championship name must have at least 3 characters
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Program[0]
+      Match created successfully: ed57aad9-e5c9-470f-9f3d-75b6a690aee4
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Program[0]
+      Team created successfully: 04790365-b574-43a7-a1db-c3f399a230c9
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+  Passed BolaoApi.Tests.Integration.WeatherForecastEndpointTests.GetWeatherForecast_ShouldReturnForecasWithValidData [15 ms]
+  Passed BolaoApi.Tests.Integration.CreateMatchEndpointTests.CreateMatchEndpoint_WithValidData_ShouldReturnCreated [17 ms]
+  Passed BolaoApi.Tests.Integration.CreateChampionshipEndpointTests.CreateChampionshipEndpoint_WithEndDateBeforeStartDate_ShouldReturnBadRequest [18 ms]
+  Passed BolaoApi.Tests.Integration.CreateTeamEndpointTests.CreateTeamEndpoint_WithEmptyUrl_ShouldReturnBadRequest [37 ms]
+  Passed BolaoApi.Tests.Integration.CreateMatchEndpointTests.CreateMatchEndpoint_WithNegativeVisitorScore_ShouldReturnBadRequest [13 ms]
+  Passed BolaoApi.Tests.Integration.CreateChampionshipEndpointTests.CreateChampionshipEndpoint_ShouldReturnLocationHeader [16 ms]
+  Passed BolaoApi.Tests.Integration.CreateMatchEndpointTests.CreateMatchEndpoint_WithZeroScores_ShouldReturnCreated [15 ms]
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Program[0]
+      Championship created successfully: 8cf88dd9-0430-43aa-8153-bd4664472923
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Program[0]
+      Match created successfully: 126013fe-94cd-4e20-adcd-c756877c597b
+info: Program[0]
+      Team created successfully: fd2813f0-3cf3-4761-93f4-a685c1faf139
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+  Passed BolaoApi.Tests.Integration.CreateTeamEndpointTests.CreateTeamEndpoint_WithMaxNameLength_ShouldReturnCreated [17 ms]
+  Passed BolaoApi.Tests.Integration.CreateChampionshipEndpointTests.CreateChampionshipEndpoint_WithShortName_ShouldReturnBadRequest [13 ms]
+  Passed BolaoApi.Tests.Features.Matches.MatchRepositoryTests.GetByIdAsync_ShouldReturnNullWhenNotFound [227 ms]
+  Passed BolaoApi.Tests.Features.Teams.TeamRepositoryTests.CreateAsync_ShouldNotSaveImmediately [834 ms]
+  Passed BolaoApi.Tests.Features.Championships.ChampionshipRepositoryTests.SaveChangesAsync_ShouldPersistChanges [837 ms]
+  Passed BolaoApi.Tests.Features.Teams.TeamRepositoryTests.SaveChangesAsync_ShouldPersistChanges [4 ms]
+  Passed BolaoApi.Tests.Features.Championships.ChampionshipRepositoryTests.GetByIdAsync_ShouldReturnChampionshipWhenExists [1 ms]
+  Passed BolaoApi.Tests.Features.Teams.TeamRepositoryTests.CreateAsync_MultipleTeams_ShouldHaveUniqueIds [1 ms]
+  Passed BolaoApi.Tests.Integration.CreateChampionshipEndpointTests.CreateChampionshipEndpoint_WithValidEndDateAfterStartDate_ShouldReturnCreated [15 ms]
+  Passed BolaoApi.Tests.Integration.CreateTeamEndpointTests.CreateTeamEndpoint_ShouldReturnLocationHeader [15 ms]
+  Passed BolaoApi.Tests.Integration.CreateMatchEndpointTests.CreateMatchEndpoint_ShouldReturnLocationHeader [15 ms]
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+  Passed BolaoApi.Tests.Features.Teams.TeamRepositoryTests.GetAllAsync_ShouldReturnAllTeams [10 ms]
+  Passed BolaoApi.Tests.Features.Championships.ChampionshipRepositoryTests.GetAllAsync_ShouldReturnAllChampionships [13 ms]
+  Passed BolaoApi.Tests.Features.Championships.ChampionshipRepositoryTests.GetAllAsync_ShouldReturnEmptyWhenNoChampionships [1 ms]
+  Passed BolaoApi.Tests.Features.Teams.TeamRepositoryTests.CreateAsync_ShouldCreateTeamWithUniqueId [4 ms]
+  Passed BolaoApi.Tests.Features.Championships.ChampionshipRepositoryTests.CreateAsync_ShouldSetCreatedAtToNow [1 ms]
+  Passed BolaoApi.Tests.Features.Matches.MatchRepositoryTests.GetByChampionshipIdAsync_ShouldNotReturnMatchesFromOtherChampionships [22 ms]
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+  Passed BolaoApi.Tests.Features.Championships.ChampionshipRepositoryTests.CreateAsync_ShouldCreateChampionshipWithUniqueId [< 1 ms]
+  Passed BolaoApi.Tests.Features.Teams.TeamRepositoryTests.GetByIdAsync_ShouldReturnTeamWhenExists [1 ms]
+  Passed BolaoApi.Tests.Features.Championships.ChampionshipRepositoryTests.GetByIdAsync_ShouldReturnNullWhenNotFound [< 1 ms]
+  Passed BolaoApi.Tests.Features.Matches.MatchRepositoryTests.SaveChangesAsync_ShouldPersistChanges [1 ms]
+  Passed BolaoApi.Tests.Features.Teams.TeamRepositoryTests.GetByIdAsync_ShouldReturnNullWhenNotFound [6 ms]
+  Passed BolaoApi.Tests.Features.Championships.ChampionshipRepositoryTests.CreateAsync_ShouldNotSaveImmediately [6 ms]
+  Passed BolaoApi.Tests.Features.Teams.TeamRepositoryTests.CreateAsync_ShouldSetCreatedAtToNow [< 1 ms]
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Program[0]
+      Team created successfully: c96fbf49-f764-4762-8a7e-c8ab3e84ee34
+info: Program[0]
+      Match created successfully: 48d2a0db-9291-4571-8dab-09e003986859
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Program[0]
+      Championship creation validation failed: Championship name must not exceed 255 characters
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+  Passed BolaoApi.Tests.Features.Matches.MatchRepositoryTests.CreateAsync_ShouldNotSaveImmediately [1 ms]
+  Passed BolaoApi.Tests.Features.Championships.ChampionshipRepositoryTests.CreateAsync_MultipleChampionships_ShouldHaveUniqueIds [1 ms]
+  Passed BolaoApi.Tests.Features.Teams.TeamRepositoryTests.GetAllAsync_ShouldReturnEmptyWhenNoTeams [1 ms]
+  Passed BolaoApi.Tests.Integration.CreateMatchEndpointTests.CreateMatchEndpoint_WithOnlyHomeScore_ShouldReturnCreated [22 ms]
+  Passed BolaoApi.Tests.Features.Matches.MatchRepositoryTests.GetAllAsync_ShouldReturnEmptyWhenNoMatches [7 ms]
+  Passed BolaoApi.Tests.Integration.CreateTeamEndpointTests.CreateTeamEndpoint_WithValidData_ShouldReturnCreated [23 ms]
+  Passed BolaoApi.Tests.Integration.CreateChampionshipEndpointTests.CreateChampionshipEndpoint_WithExceededNameLength_ShouldReturnBadRequest [24 ms]
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Program[0]
+      Match creation validation failed: Home team ID is required
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Program[0]
+      Team created successfully: bdfcf974-035c-49cf-96cf-1dcc893a77e2
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Program[0]
+      Championship created successfully: 36fb9313-2486-443e-9935-a0800c9d7d66
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Program[0]
+      Team created successfully: d5e9a447-8a16-4cc6-87e9-9cbfdda65c02
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Program[0]
+      Championship created successfully: 800b5ef2-5f3c-498c-a047-eee1a5477d14
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+  Passed BolaoApi.Tests.Features.Matches.MatchRepositoryTests.GetByChampionshipIdAsync_ShouldReturnEmptyWhenNoMatches [1 ms]
+  Passed BolaoApi.Tests.Features.Matches.MatchRepositoryTests.GetByChampionshipIdAsync_ShouldReturnMatchesForChampionship [2 ms]
+  Passed BolaoApi.Tests.Features.Matches.MatchRepositoryTests.CreateAsync_ShouldCreateMatchWithUniqueId [1 ms]
+  Passed BolaoApi.Tests.Features.Matches.MatchRepositoryTests.GetByIdAsync_ShouldReturnMatchWhenExists [1 ms]
+  Passed BolaoApi.Tests.Features.Matches.MatchRepositoryTests.GetAllAsync_ShouldReturnAllMatches [1 ms]
+  Passed BolaoApi.Tests.Features.Matches.MatchRepositoryTests.CreateAsync_ShouldSetCreatedAtToNow [1 ms]
+  Passed BolaoApi.Tests.Integration.CreateMatchEndpointTests.CreateMatchEndpoint_WithEmptyHomeTeamId_ShouldReturnBadRequest [14 ms]
+  Passed BolaoApi.Tests.Integration.CreateTeamEndpointTests.CreateTeamEndpoint_MultipleTeams_ShouldCreateAll [20 ms]
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+warn: Program[0]
+      Match creation validation failed: Championship ID is required
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Program[0]
+      Team creation validation failed: Team flag URL must be a valid URL
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Program[0]
+      Match created successfully: 103e8ad7-e5b2-499d-811a-7231f75cda21
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Program[0]
+      Championship created successfully: 0e78168b-94c4-4e86-b140-58efa1d6e8d7
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Program[0]
+      Match created successfully: ed6b51ca-1d71-4d4f-8f44-5dc261046889
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+  Passed BolaoApi.Tests.Integration.CreateChampionshipEndpointTests.CreateChampionshipEndpoint_MultipleChampionships_ShouldCreateAll [20 ms]
+  Passed BolaoApi.Tests.Integration.CreateMatchEndpointTests.CreateMatchEndpoint_WithEmptyChampionshipId_ShouldReturnBadRequest [32 ms]
+  Passed BolaoApi.Tests.Integration.CreateTeamEndpointTests.CreateTeamEndpoint_WithInvalidUrl_ShouldReturnBadRequest [14 ms]
+  Passed BolaoApi.Tests.Repositories.UserRepositoryTests.SaveChangesAsync_ShouldPersistChanges [949 ms]
+  Passed BolaoApi.Tests.Integration.CreateChampionshipEndpointTests.CreateChampionshipEndpoint_WithValidData_ShouldReturnCreated [29 ms]
+  Passed BolaoApi.Tests.Integration.CreateMatchEndpointTests.CreateMatchEndpoint_MultipleMatches_ShouldCreateAll [18 ms]
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Program[0]
+      Team creation validation failed: Team name must have at least 3 characters
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Program[0]
+      Championship created successfully: a133c4f0-b6e7-44ad-8180-da1c45c921a7
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+warn: Program[0]
+      Match creation validation failed: Home team score must be greater than or equal to 0
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Program[0]
+      Match created successfully: 74e91b62-0168-4d2b-94df-13d603f5e69f
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Program[0]
+      Match creation validation failed: Visitor team ID is required
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+  Passed BolaoApi.Tests.Integration.CreateTeamEndpointTests.CreateTeamEndpoint_WithShortName_ShouldReturnBadRequest [14 ms]
+  Passed BolaoApi.Tests.Integration.CreateChampionshipEndpointTests.CreateChampionshipEndpoint_WithMaxNameLength_ShouldReturnCreated [23 ms]
+  Passed BolaoApi.Tests.Integration.CreateMatchEndpointTests.CreateMatchEndpoint_WithNegativeHomeScore_ShouldReturnBadRequest [23 ms]
+  Passed BolaoApi.Tests.Integration.CreateMatchEndpointTests.CreateMatchEndpoint_WithValidDataAndScores_ShouldReturnCreated [13 ms]
+  Passed BolaoApi.Tests.Integration.CreateMatchEndpointTests.CreateMatchEndpoint_WithEmptyVisitorTeamId_ShouldReturnBadRequest [13 ms]
+  Passed BolaoApi.Tests.UserEntityTests.UserConstructor_ShouldGenerateUniqueIds [686 ms]
+  Passed BolaoApi.Tests.Integration.AuthEndpointTests.AuthenticateEndpoint_TokenShouldBeValid [929 ms]
+  Passed BolaoApi.Tests.UserEntityTests.UserConstructor_ShouldInitializeUserProperties [282 ms]
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+  Passed BolaoApi.Tests.Integration.AuthEndpointTests.AuthenticateEndpoint_WithInvalidEmail_ShouldReturnUnauthorized [12 ms]
+  Passed BolaoApi.Tests.Repositories.UserRepositoryTests.AddAsync_MultipleUsers_ShouldAddAllUsers [566 ms]
+  Passed BolaoApi.Tests.UserEntityTests.UserProperties_ShouldBeSettable [261 ms]
+  Passed BolaoApi.Tests.Integration.AuthEndpointTests.RegisterEndpoint_WithDuplicateEmail_ShouldReturnBadRequest [265 ms]
+  Passed BolaoApi.Tests.Repositories.UserRepositoryTests.GetByEmailAsync_ShouldReturnUserWhenExists [249 ms]
+  Passed BolaoApi.Tests.Repositories.UserRepositoryTests.GetByIdAsync_ShouldReturnUserWhenExists [238 ms]
+  Passed BolaoApi.Tests.Repositories.UserRepositoryTests.GetByIdAsync_ShouldReturnNullWhenUserNotFound [20 ms]
+  Passed BolaoApi.Tests.Repositories.UserRepositoryTests.GetByEmailAsync_ShouldReturnNullWhenUserNotFound [< 1 ms]
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Testing
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\projetos\projeto\src\Bolao\BolaoApi
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 1 entities to in-memory store.
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+[xUnit.net 00:00:03.64]   Finished:    BolaoApi.Tests
+  Passed BolaoApi.Tests.Repositories.UserRepositoryTests.AddAsync_ShouldAddUserToDatabase [232 ms]
+  Passed BolaoApi.Tests.Integration.AuthEndpointTests.AuthenticateEndpoint_WithValidCredentials_ShouldReturnToken [511 ms]
+  Passed BolaoApi.Tests.Integration.AuthEndpointTests.RegisterEndpoint_WithValidData_ShouldReturnOkAndUserId [248 ms]
+  Passed BolaoApi.Tests.Integration.AuthEndpointTests.AuthenticateEndpoint_WithWrongPassword_ShouldReturnUnauthorized [472 ms]
 
-Failed!  - Failed:     3, Passed:    18, Skipped:     0, Total:    21, Duration: 1 s - BolaoApi.Tests.dll (net10.0)
+Test Run Failed.
+Total tests: 141
+     Passed: 139
+     Failed: 2
+ Total time: 4,3237 Seconds
