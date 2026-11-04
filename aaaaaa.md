@@ -1,5 +1,7 @@
 # Projeto
 
+mysecret = my-fasdfasdfasdfasd-secret
+
 API para consulta de dados da Copa do Mundo 2026: grupos, seleções, partidas e classificação (ranking).
 
 ## Visão geral
